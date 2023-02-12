@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img-container {
+  background-color: #efefef;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin: 12px 0 0 0;
+  text-align: center;
+  font-size: 20px;
+  color: #0b3558;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 0;
+  color: #0b3558;
+}
+
+form {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  gap: 16px;
+  height: 216px;
+  margin-top: 46px;
+  position: relative;
+}
+
+form input {
+  width: 100%;
+  height: 55px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #a2a2a2;
+  border-radius: 4px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #a2a2a2;
+  opacity: 1;
+  padding: 0 16px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  height: 61px;
+  background: #003fb9 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  font: normal normal 600 24px/33px Open Sans;
+}
+
+i {
+  position: absolute;
+  bottom: 47%;
+  right: 5%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .form-container {
+    height: 100%;
+  }
+
+  form {
+    height: 15rem;
+    width: 100%;
+    gap: 5%;
+    margin-top: 46px;
+  }
+
+  form input {
+    width: 300px;
+    height: 55px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #a2a2a2;
+    border-radius: 4px;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #a2a2a2;
+    opacity: 1;
+    padding-left: 16px;
+  }
+
+  button {
+    width: 300px;
+    height: 61px;
+    background: #003fb9 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  i {
+    bottom: 53%;
+  }
+}
