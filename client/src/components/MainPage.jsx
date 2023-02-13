@@ -12,7 +12,7 @@ const MainPage = () => {
     try {
       const token = localStorage.getItem("token");
       console.log(token);
-      const url = "https://login-page-backend.onrender.com/verify";
+      const url = "https://login-page-server.onrender.com/verify";
       const res = await axios.post(url, { token: token });
       console.log(res.data);
       if (res.data.data === "token expired") {

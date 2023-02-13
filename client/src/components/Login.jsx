@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "https://login-page-backend.onrender.com/login";
+      const url = "https://login-page-server.onrender.com/login";
       const { data: res } = await axios.post(url, data);
       // localStorage.setItem("email", data.email);
       localStorage.setItem("token", res.data);
