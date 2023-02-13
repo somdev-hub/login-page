@@ -20,13 +20,8 @@ const Login = () => {
       window.location = "/";
       console.log(res.data);
     } catch (error) {
-      if (
-        error.response &&
-        error.response.status === 400 &&
-        error.response.status <= 500
-      ) {
-        console.log(error);
-      }
+      alert(error.response.data)
+      console.log(error);
     }
   };
   return (

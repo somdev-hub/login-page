@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   const user = localStorage.getItem("token");
-  // console.log(JSON.parse(user));
   return (
     <BrowserRouter>
       <Routes>
