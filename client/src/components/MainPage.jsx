@@ -17,7 +17,7 @@ const MainPage = () => {
       console.log(res.data);
       if (res.data.data === "token expired") {
         localStorage.clear();
-        window.location = "/login";
+        window.location = "/";
         alert("your session has expired, please login again");
       }
       setEmail(res.data.email);
